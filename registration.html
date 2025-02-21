@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/students.css">
+    <link rel="stylesheet" href="css/halls.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+
+    <h2 id="form-title">New Student Registration</h2>
+
+    <form id="registration-form">
+        <input type="hidden" id="student-id">
+
+        <label for="name">First Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="surname">Last Name:</label>
+        <input type="text" id="surname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" required>
+
+        <label for="hall">Select Hall:</label>
+        <select id="hall" required>
+            <option value="hall1">Hall 1</option>
+            <option value="hall2">Hall 2</option>
+        </select>
+
+        <label for="seat-number">Seat Number:</label>
+        <input type="number" id="seat-number" required>
+
+        <label for="seat-type">Seat Type:</label>
+        <select id="seat-type" required>
+            <option value="Regular">Regular</option>
+            <option value="VIP">VIP</option>
+        </select>
+
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" required>
+            <option value="Cash">Cash</option>
+            <option value="Credit Card">Credit Card</option>
+        </select>
+
+        <label for="remaining-fees">Remaining Fees:</label>
+        <select id="remaining-fees" required>
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+
+        <div id="fees-amount-container" style="display: none;">
+            <label for="fees-amount">Fees Amount:</label>
+            <input type="number" id="fees-amount">
+        </div>
+
+        <label for="registration-date">Registration Date:</label>
+        <input type="date" id="registration-date" required>
+
+        <button type="submit" id="submit-button">Register</button>
+    </form>
+
+    <button id="back-button">Back to Students</button>
+
+    <script src="js/registration.js"></script>
+</body>
+</html>
